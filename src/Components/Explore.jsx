@@ -46,15 +46,14 @@ const Explore = () => {
                   <img src={pdf} alt="" />
                   <span>Mild Steal Diamond Grating</span>
                 </div>
-                <li className=" border-b-2 pb-2 font-semibold text-2xl">
-                  Mild Steel Stairs Treads
-                </li>
-                <li className=" border-b-2 pb-2 font-semibold text-2xl">
-                  Aluminium Stair Treads
-                </li>
-                <li className=" border-b-2 pb-2 font-semibold text-2xl">
-                  Mastermesh Expanded Metal
-                </li>
+                <div className="  flex border-b-2 pb-2 font-semibold text-2xl">
+                  <img src={pdf} alt="" />
+                  <span>Mild Steal Diamond Grating</span>
+                </div>
+                <div className="  flex border-b-2 pb-2 font-semibold text-2xl">
+                  <img src={pdf} alt="" />
+                  <span>Mild Steal Diamond Grating</span>
+                </div>
               </div>
               <div>
                 <button className="bg-maroon-red pt-[16px] pr-[30px] pl-[30px] pb-[16px] flex items-center">
