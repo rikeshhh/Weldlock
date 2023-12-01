@@ -12,9 +12,9 @@ import Header from './Header'
 function App() {
 
   return (
-    <div>
+    <>
     <Header />
- <div>
+ <main>
   <Hero/>
   <About/>
   <Solutions/>
@@ -23,9 +23,9 @@ function App() {
   <Feature/>
   <Explore/>
   <Latest/>
- </div>
+ </main>
   <Footer/>
-    </div>
+    </>
   )
 }
 

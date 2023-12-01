@@ -7,7 +7,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="bg-footer-image">
       <div className="flex flex-col  pt-24 pr-32 pl-32 pb-24 gap-10">
         <h2>Enquire Now</h2>
         <div className="grid grid-cols-2 justify-between pb-6 border-b-2">
@@ -74,7 +74,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

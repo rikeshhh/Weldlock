@@ -1,4 +1,6 @@
 import aboutpicture from "../assets/About.png";
+import { MdArrowOutward } from "react-icons/md";
+
 const About = () => {
   return (
     <div className="bg-dipBlack">
@@ -30,7 +32,9 @@ const About = () => {
             </div>
         </div>
         <div>
-        <button className="bg-maroon-red text-white p-4">Learn More about us</button>
+        <button className="bg-maroon-red text-white p-4 flex justify-center items-center gap-2">
+       <MdArrowOutward/>
+          Learn More about us</button>
 
         </div>
       </div>
