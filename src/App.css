@@ -2,16 +2,17 @@ body{
     font-family: 'Manrope', sans-serif;
     color: white;
 }
+
 .bg-header-image{
   background-image: url('./assets/heroRect.png');
   background-repeat: no-repeat;
   background-size: cover;
     color: white; 
 }
-.hero{
+.header-background{
     background-image: url('./assets/heroRect.png');
     width: 100%;
-    height: 100vh;
+    height: 70%;
     object-fit: cover;
     color: white;
 }
@@ -31,16 +32,21 @@ body{
     max-height:100%;
     background-blend-mode: normal, hue, normal;
 }
+.requestCode-image{
+  background-image: url(./assets/request.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mySwiper {
   position: relative;
-  display: flex;
+  width: 100%;
+  height: 100%;
   }
   
   .swiper-slide {
     font-size: 18px;
-  
-    /* Center slide text vertically */
-    display: flex;
+      display: flex;
   }
   
   .swiper-slide img {
@@ -50,19 +56,24 @@ body{
     object-fit: cover;
   }
   .swiper-pagination {
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
   }
+
   .mySwiper .swiper-pagination-progressbar {
-    height: 4px; 
+    height: 5px; 
     margin-top: 60%;
+  }
+  .hoverMe::after{
+    content:'';
+    height: 2px;
     width: 100%;
+    transform: scale(0);
+    background-color: red;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+    bottom: -3.1rem;
   }
-  .requestCode-image{
-    background-image: url(./assets/request.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  .hoverMe:hover::after{
+transform: scale(1);
   }
-  
-  .swiper-pagination {
-    top: 32px;
-}

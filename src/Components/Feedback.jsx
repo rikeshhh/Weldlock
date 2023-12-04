@@ -5,8 +5,8 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Feedback = () => {
   return (
-    <div className="bg-dipBlack flex flex-col">
-      <div className="pt-24 pr-32 pl-32 pb-24">
+    <section className="Testinomial bg-dipBlack pt-24">
+      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
         <div className="flex justify-between items-center gap-32  ">
           <div className="flex flex-col w-[472px] gap-4 ">
             <span>Testinomials</span>
@@ -20,14 +20,14 @@ const Feedback = () => {
               <FaArrowLeft className="bg-maroon-red w-8 h-8 p-2" />
             </div>
           </div>
-          <div className="bg-white text-black w-[575px]">
-            <div className="pt-10 pl-14 pb-10">
+          <div className="bg-white text-black w-[575px] pt-10 pl-14 pb-10 ">
+            <div className="gap-[24px] flex flex-col">
               <p>
                 I have been a customer of Weldlok for over 5 years now, in this
                 time I have been nothing but pleased with the service and
                 quality. Weldlok always goes above and beyond my expectations.
               </p>
-              <div className="flex ">
+              <div className="flex gap-[12px]">
                 <img src={Paul} alt="" className="rounded-md" />
                 <div className="flex flex-col justify-start ">
                   <h3>Paul Mirabito</h3>
@@ -44,13 +44,13 @@ const Feedback = () => {
               With Our Premium Solutions!
             </h3>
           </div>
-          <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 flex items-center">
+          <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 h-fit flex items-center gap-[12px]">
             <MdArrowOutward />
             Request a code
           </button>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

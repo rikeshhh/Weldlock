@@ -7,32 +7,44 @@ import Solutions from './Components/Solutions'
 import Customers from './Components/Customers'
 import Feedback from './Components/Feedback'
 import Hero from './Components/Hero'
+import Feature from './Components/Feature'
+import Explore from './Components/Explore'
 import App from './App'
 const router = createBrowserRouter([
   {
-    path:'',
+    path:'/',
     element:<App/>,
-  },
-      {
-        path:'hero',
-        element:<Hero/>,
+ children:[
+  {
+    path:'',
+    element:<Hero/>,
+      },
+          {
+            path:'About',
+            element:<About/>,
           },
-              {
-                path:'About',
-                element:<About/>,
-              },
-              {
-                path:'Solutions',
-                element:<Solutions/>,
-              },
-              {
-                path:'Customers',
-                element:<Customers/>,
-              },
-              {
-                path:'Feedback',
-                element:<Feedback/>
-              },
+          {
+            path:'Feature',
+            element:<Feature/>,
+          },
+          {
+            path:'Solutions',
+            element:<Solutions/>,
+          },
+          {
+            path:'Customers',
+            element:<Customers/>,
+          },
+          {
+            path:'Feedback',
+            element:<Feedback/>
+          },
+          {
+            path:'Explore',
+            element:<Explore/>
+          },
+ ]
+  },   
             ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

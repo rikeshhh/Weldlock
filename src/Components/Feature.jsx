@@ -6,136 +6,80 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
 // import required modules
 import { Pagination } from "swiper/modules";
 
 const Feature = () => {
   return (
-    <div className="bg-dipBlack flex flex-col">
-      <div className="pt-24 pr-32 pl-32 pb-24">
-        <span>Case Studies</span>
-        <div className="flex justify-between">
-          <h1 className="text-4xl">Featured Project</h1>
-          <button className="bg-maroon-red p-2">View All Case Studies</button>
-        </div>
+    <section className="Case-Studies bg-dipBlack py-24">
+      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+        <div className="flex flex-col">
+          <span>Case Studies</span>
+          <div className="flex justify-between">
+            <h2 className="text-4xl">Featured Project</h2>
+            <div>
+            <button className="bg-maroon-red flex items-center p-2 gap-[12px]">
+            <MdArrowOutward/>
+              View All Case Studies</button>
+            </div>
+          </div>
 
-        <>
-          <Swiper
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-            style={{
-              "--swiper-pagination-color": "#F80102",
-              "--swiper-pagination-bullet-inactive-color": "#999999",
-              "--swiper-pagination-bullet-inactive-opacity": "1",
-              "--swiper-pagination-bullet-size": "14px",
-              "--swiper-pagination-bullet-horizontal-gap": "6px",
-              "--swiper-pagination-bottom": "-6px",
-            }}
-          >
-            <SwiperSlide className="pb-12">
-              <div className="flex pt-11">
-                <div className="flex justify-center h-[500px]">
-                <img src={build} alt="" />
-                </div>
-                <div className="flex flex-col justify-start items-start  gap-7 w-[400px] pl-10 pr-10">
-                  <h3 className="text-3xl font-black">
-                    Central Taiwan Innovation & Research Park
-                  </h3>
-                  <div className="flex justify-center">
-                    <ul>
-                      <li className="border-y-1 border-dipBlack">
-                        Location: Nantou,Taiwan
-                      </li>
-                      <li className="border-y-2 border-[#FFFFFF]">
-                        {" "}
-                        Clients : Central Taiwan Innovation & Research Park
-                      </li>
-                    </ul>
+          <div>
+            <Swiper
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper grid grid-cols-2 justify-center items-start"
+              style={{
+                "--swiper-pagination-color": "#F80102",
+                "--swiper-pagination-bullet-inactive-color": "#999999",
+                "--swiper-pagination-bullet-inactive-opacity": "1",
+                "--swiper-pagination-bullet-size": "14px",
+                "--swiper-pagination-bullet-horizontal-gap": "6px",
+                "--swiper-pagination-bottom": "-6px",
+              }}
+            >
+              <SwiperSlide className="pb-12">
+                <div className="flex pt-11 justify-between gap-12">
+                  <div className="flex justify-center h-[500px]">
+                    <img src={build} alt="" />
                   </div>
-                  <p className="font-semibold">
-                    Bio-architecture Formosana, an architectural firm known for
-                    their commitment to eco-friendly buildings, achieved the
-                    highest grade of Taiwans green building label with project.
-                  </p>
-                  <button className="flex justify-center items-center">
-                    <MdArrowOutward />
-                    Read Full Case Study
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex pt-11">
-              <div>
-                <img src={build} alt="" />
-                </div>                <div className="flex flex-col justify-start items-start  gap-7 w-[400px] pl-10 pr-10">
-                  <h3 className="text-3xl font-black">
-                    Central Taiwan Innovation & Research Park
-                  </h3>
-                  <div className="flex justify-center">
-                    <ul className="divide-y divide-slate-700">
-                      <li className="border-y-1 border-dipBlack">
-                        Location: Nantou,Taiwan
-                      </li>
-                      <li className="border-y-2 border-[#FFFFFF]">
-                        {" "}
-                        Clients : Central Taiwan Innovation & Research Park
-                      </li>
-                    </ul>
+                  <div className="flex flex-col justify-center items-start  gap-7 w-[400px]">
+                    <h3 className="text-3xl font-black">
+                      Central Taiwan Innovation & Research Park
+                    </h3>
+                    <div className="flex justify-center flex-col">
+                      <div className="border-y-2 border-[#ffffff1a] flex gap-12">
+                        <span className="w-12 ">Location:</span>
+                        <div className="">Nantou,Taiwan</div>
+                      </div>
+                      <div className="border-[#ffffff1a] border-b-2 flex  gap-12 ">
+                        <span>Client:</span>
+                        <div>Central Taiwan Innovation & Research Park</div>
+                      </div>
+                    </div>
+                    <p className="font-semibold">
+                      Bio-architecture Formosana, an architectural firm known
+                      for their commitment to eco-friendly buildings, achieved
+                      the highest grade of Taiwans green building label with
+                      project.
+                    </p>
+                    <button className="flex justify-center items-center">
+                      <MdArrowOutward />
+                      Read Full Case Study
+                    </button>
                   </div>
-                  <p className="font-semibold">
-                    Bio-architecture Formosana, an architectural firm known for
-                    their commitment to eco-friendly buildings, achieved the
-                    highest grade of Taiwans green building label with project.
-                  </p>
-                  <button className="flex justify-center items-center">
-                    <MdArrowOutward />
-                    Read Full Case Study
-                  </button>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex pt-11">
-              <div>
-                <img src={build} alt="" />
-                </div>                <div className="flex flex-col justify-start items-start  gap-7 w-[400px] pl-10 pr-10">
-                  <h3 className="text-3xl font-black">
-                    Central Taiwan Innovation & Research Park
-                  </h3>
-                  <div className="flex justify-center">
-                    <ul>
-                      <li className="border-y-1 border-dipBlack border">
-                        Location: Nantou,Taiwan
-                      </li>
-                      <li className="border-y-2 border-dipBlack border">
-                        {" "}
-                        Clients : Central Taiwan Innovation & Research Park
-                      </li>
-                    </ul>
-                  </div>
-                  <p className="font-semibold">
-                    Bio-architecture Formosana, an architectural firm known for
-                    their commitment to eco-friendly buildings, achieved the
-                    highest grade of Taiwans green building label with project.
-                  </p>
-                  <button className="flex justify-center items-center">
-                    <MdArrowOutward />
-                    Read Full Case Study
-                  </button>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </>
-       
-      </div>
-    </div>
+              </SwiperSlide>
+              <SwiperSlide></SwiperSlide>
+              <SwiperSlide></SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+    </section>
   );
 };
 

@@ -67,26 +67,28 @@ const Customers = () => {
     alignitems: center;
   `;
   return (
-    <div className="customerBackground-image">
-      <div className="flex flex-col justify-center items-start pt-24 pr-32 pl-32 pb-24">
-        <div className="flex flex-col">
-          <span>Our Customers</span>
-          <h2 className="text-[44px] font-black">Who we work for</h2>
-        </div>
-        <div className="grid grid-cols-3 gap-[25px] justify-center items-center">
-          {data.map((item) => (
-            <div key={item.id}>
-              <div className="flex">
-                <Button className="flex justify-start items-center gap-4">
-                  <img src={item.image} />
-                  {item.name}
-                </Button>
+    <section className="Our-Customer customerBackground-image py-24">
+      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+        <div className="flex flex-col justify-center items-start gap-12">
+          <div className="flex flex-col gap-[12px]">
+            <span>Our Customers</span>
+            <h2 className="text-[44px]  font-semibold">Who we work for</h2>
+          </div>
+          <div className="grid grid-cols-3 gap-[25px] justify-center items-center">
+            {data.map((item) => (
+              <div key={item.id}>
+                <div className="flex">
+                  <Button className="flex justify-start items-center gap-4">
+                    <img src={item.image} />
+                    {item.name}
+                  </Button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

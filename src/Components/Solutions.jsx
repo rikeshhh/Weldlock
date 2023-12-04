@@ -36,13 +36,14 @@ const Solutions = () => {
     },
   ]
   return (
-    <div className="bg-solutionBlack h-screen">
-      <div className="flex flex-col justify-start  gap-12 pt-24 pr-32 pl-32 pb-24">
-        <div className="flex flex-col">
+    <section className="Our-solution bg-solutionBlack h-screen py-24">
+      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+            <div className="flex flex-col justify-between  gap-12">
+        <div className="flex flex-col gap-[12px]">
           <span>OUR SOLUTIONS</span>
           <h2 className="text-5xl font-semibold">Our Diverse Product Range</h2>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-4">
           {data.map((item)=>(
       <div className="flex flex-col w-[276px] h-[160px] gap-6" key={item.id}>
       <img src={item.image} alt="" />
@@ -55,7 +56,8 @@ const Solutions = () => {
           ))}
         </div>
       </div>
-    </div>
+</section>
+    </section>
   );
 };
 

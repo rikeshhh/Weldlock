@@ -4,8 +4,9 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Latest = () => {
   return (
-    <div className="bg-black">
-      <div className="flex flex-col pt-24 pr-32 pl-32 pb-24">
+    <section className="Our-News-Event bg-black py-24">
+            <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+      <div className="flex flex-col">
         <div className="flex justify-between pb-12">
           <div className="flex flex-col">
             <span>NEWS AND EVENT</span>
@@ -37,7 +38,7 @@ const Latest = () => {
               <img src={handrail} alt="" />
               <div className="flex flex-col justify-start items-start gap-[18px]">
                 <div className="flex gap-4  text-xs font-thin">
-                  <span className="border border-grayWhite">CIVIL</span>
+                  <span className="border border-[#ffffff1a]">CIVIL</span>
                   <span>JULY 19,2023</span>
                 </div>
                 <h2 className="font-semibold text-2xl">Ductile Solutions For Civil Drainage</h2>
@@ -49,7 +50,7 @@ const Latest = () => {
               <img src={handrail} alt="" />
               <div className="flex flex-col justify-start items-start gap-[18px]">
                 <div className="flex gap-4  text-xs font-thin">
-                  <span className="border">CIVIL</span>
+                  <span className="border border-[#ffffff1a]">ARCHITECTURAL</span>
                   <span>JULY 19,2023</span>
                 </div>
                 <h2 className="font-semibold text-2xl">Ductile Solutions For Civil Drainage</h2>
@@ -61,7 +62,7 @@ const Latest = () => {
               <img src={handrail} alt="" />
               <div className="flex flex-col items-start gap-[18px]">
                 <div className="flex gap-4  text-xs font-thin">
-                  <span className="border">CIVIL</span>
+                  <span className="border border-[#ffffff1a]">Industrial</span>
                   <span>JULY 19,2023</span>
                 </div>
                 <h2 className="font-semibold text-2xl">Ductile Solutions For Civil Drainage</h2>
@@ -71,7 +72,8 @@ const Latest = () => {
           </div>
         </div>
       </div>
-    </div>
+      </section>
+    </section>
   );
 };
 
