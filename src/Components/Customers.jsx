@@ -67,9 +67,9 @@ const Customers = () => {
     alignitems: center;
   `;
   return (
-    <section className="Our-Customer customerBackground-image py-24">
-      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
-        <div className="flex flex-col justify-center items-start gap-12">
+    <section className="Our-Customer customerBackground-image">
+      <div className="main-container">
+        <div className="flex flex-col justify-center items-start gap-12 py-24">
           <div className="flex flex-col gap-[12px]">
             <span>Our Customers</span>
             <h2 className="text-[44px]  font-semibold">Who we work for</h2>
@@ -79,7 +79,9 @@ const Customers = () => {
               <div key={item.id}>
                 <div className="flex">
                   <Button className="flex justify-start items-center gap-4">
-                    <img src={item.image} />
+                 <figure>
+                 <img src={item.image} />
+                 </figure>
                     {item.name}
                   </Button>
                 </div>
@@ -87,7 +89,7 @@ const Customers = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };

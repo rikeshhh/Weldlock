@@ -12,11 +12,11 @@ import Header from "./Header";
 function App() {
   return (
     <>
-      <header className="header-background">
+      <header className="Header-Background bg-header-image py-[40px]">
         <Header />
-        <Hero/>
       </header>
       <main>
+        <Hero/>
         <About />
         <Solutions />
         <Customers />

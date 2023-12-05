@@ -12,7 +12,7 @@ import { Pagination } from "swiper/modules";
 const Feature = () => {
   return (
     <section className="Case-Studies bg-dipBlack py-24">
-      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+      <div className="main-container">
         <div className="flex flex-col">
           <span>Case Studies</span>
           <div className="flex justify-between">
@@ -43,8 +43,10 @@ const Feature = () => {
             >
               <SwiperSlide className="pb-12">
                 <div className="flex pt-11 justify-between gap-12">
-                  <div className="flex justify-center h-[500px]">
-                    <img src={build} alt="" />
+                  <div>
+                 <figure  className="flex justify-center h-[500px]">
+                 <img src={build} alt="" />
+                 </figure>
                   </div>
                   <div className="flex flex-col justify-center items-start  gap-7 w-[400px]">
                     <h3 className="text-3xl font-black">
@@ -60,12 +62,14 @@ const Feature = () => {
                         <div>Central Taiwan Innovation & Research Park</div>
                       </div>
                     </div>
-                    <p className="font-semibold">
+                  <div  className="font-semibold">
+                  <p>
                       Bio-architecture Formosana, an architectural firm known
                       for their commitment to eco-friendly buildings, achieved
                       the highest grade of Taiwans green building label with
                       project.
                     </p>
+                  </div>
                     <button className="flex justify-center items-center">
                       <MdArrowOutward />
                       Read Full Case Study
@@ -78,7 +82,7 @@ const Feature = () => {
             </Swiper>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };

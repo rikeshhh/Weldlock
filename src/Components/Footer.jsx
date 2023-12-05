@@ -3,14 +3,14 @@ import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-image py-24 border-t-2  border-[#ffffff1a]">
-      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
-        <section className="flex flex-col gap-10">
+    <footer className="bg-footer-image  border-t-2  border-[#ffffff1a]">
+      <section className="main-container  flex justify-center items-center">
+        <div className="flex flex-col gap-10 pt-24">
           <h2>Enquire Now</h2>
           <div className="grid grid-cols-2 justify-between pb-6 border-b-2 border-[#ffffff1a]">
             <div className="text-4xl font-semibold">
@@ -27,7 +27,9 @@ const Footer = () => {
             <div className="flex justify-start flex-col gap-[24px]">
               <div>
                 <a href="/">
-                  <img src={logo} alt="" />
+                <figure>
+                <img src={logo} alt="" />
+                </figure>
                 </a>
               </div>
               <p>
@@ -36,28 +38,33 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-col gap-[20px]">
-            <h2 className="text-2xl font-semibold">Quick Links</h2>
-
-            <ul className="flex flex-col gap-[20px]">
-              <li>Home</li>
-              <li>Our Customers</li>
-              <li>News</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-            </ul>
+              <h2 className="text-2xl font-semibold">Quick Links</h2>
+              <div>
+                <ul className="flex flex-col gap-[20px]">
+                  <li>Home</li>
+                  <li>Our Customers</li>
+                  <li>News</li>
+                  <li>About Us</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
             </div>
-           <div className="flex flex-col gap-[20px]">
-           <h3 className="text-2xl font-semibold">Product Range</h3>
-
-           <ul className="flex flex-col gap-[20px]">
-              <li>Civil Drainage Product</li>
-              <li>Flooring & Grating Solution</li>
-              <li>Handrail System</li>
-              <li>Mastermesh Expanded Perforateed</li>
-            </ul>
-           </div>
             <div className="flex flex-col gap-[20px]">
-              <h2 className="font-semibold text-2xl">SUBSCRIBE TO OUR NEWS LETTER</h2>
+              <h3 className="text-2xl font-semibold">Product Range</h3>
+
+              <div>
+                <ul className="flex flex-col gap-[20px]">
+                  <li>Civil Drainage Product</li>
+                  <li>Flooring & Grating Solution</li>
+                  <li>Handrail System</li>
+                  <li>Mastermesh Expanded Perforateed</li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex flex-col gap-[20px]">
+              <h2 className="font-semibold text-2xl">
+                SUBSCRIBE TO OUR NEWS LETTER
+              </h2>
               <div className="flex">
                 <input type="text" />
                 <button className="bg-maroon-red text-white w-8 flex justify-center items-center">
@@ -65,7 +72,7 @@ const Footer = () => {
                 </button>
               </div>
               <div className="flex justify-start items-center gap-[12px]">
-              <IoLogoLinkedin />
+                <IoLogoLinkedin />
                 <FaYoutube />
                 <FaFacebook />
                 <FaTwitter />
@@ -79,17 +86,18 @@ const Footer = () => {
                 registered trademark of NEPEAN Building & Infrastructure.
               </span>
               <span className="">
-              Weldlok® is a registered trademark of NEPEAN Building & Infrastructure.
+                Weldlok® is a registered trademark of NEPEAN Building &
+                Infrastructure.
               </span>
             </div>
             <div className="flex flex-col text-xs font-light">
-           <span>
-           Privacy Policy | Internet Policy | Terms & Conditions of Sale |
-              Conditions of Purchase
-           </span>
+              <span>
+                Privacy Policy | Internet Policy | Terms & Conditions of Sale |
+                Conditions of Purchase
+              </span>
             </div>
           </div>
-        </section>
+        </div>
       </section>
     </footer>
   );

@@ -4,9 +4,11 @@ import { MdArrowOutward } from "react-icons/md";
 const About = () => {
   return (
     <section className="About bg-dipBlack py-24">
-      <section className="max-w-[calc(1440px_+_266px)] py-0 px-[133px] my-0 mx-auto">
+      <div className="main-container">
         <div className="flex justify-center gap-32 items-center ">
-          <img src={aboutpicture} alt="" />
+        <figure className="w-full">
+        <img src={aboutpicture} alt="" />
+        </figure>
           <div className="flex justify-center flex-col gap-8">
             <span>About WeldLok</span>
             <h2 className="font-bold text-3xl">
@@ -14,22 +16,24 @@ const About = () => {
               serving infrastructure, mining, industrial, civil, and
               fabrication.
             </h2>
-            <p className="text-lg font-medium">
+           <div className="text-lg font-medium">
+           <p>
               We are specialists in the design and supply of high quality,
               durable grating, industrial and modular handrail, steel flooring,
               FRP flooring, and drainage grates and covers.
             </p>
+           </div>
             <div className="flex justify-start items-start gap-6">
               <div className="flex flex-col">
-                <h2 className="text-4xl font-black">60+</h2>
+                <h3 className="text-4xl font-black">60+</h3>
                 <span className="text-base">YEARS OF EXPERIENCE</span>
               </div>
               <div className="flex flex-col">
-                <h2 className="text-4xl font-black">450</h2>
+                <h4 className="text-4xl font-black">450</h4>
                 <span className="text-base">YEARS OF EXPERIENCE</span>
               </div>
               <div className="flex flex-col">
-                <h2 className="text-4xl font-black">800+</h2>
+                <h5 className="text-4xl font-black">800+</h5>
                 <span className="text-base">YEARS OF EXPERIENCE</span>
               </div>
             </div>
@@ -41,7 +45,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
   );
 };
