@@ -33,30 +33,33 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="hero-background">
-      <div className="relative overflow-hidden main-container">
+    <section className="hero-background relative overflow-hidden">
+      <div className=" main-container max-sm:w-auto">
         <div className="text-center py-56 flex items-center flex-col justify-center gap-8">
-          <h1 className="font-semibold text-6xl w-[971px]">
-            High Quality,reliable and proven products and systems
-          </h1>
+          <div className="font-semibold text-6xl w-[971px] max-sm:w-auto max-sm:text-xl md:w-auto sm:w-auto
+          ">
+            <h1>High Quality,reliable and proven products and systems</h1>
+          </div>
+          <div>
           <p>
             The Weldlok brand guarantees the right solution for all customers
           </p>
+          </div>
+        
           <div className="flex justify-center pb-12">
             <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 flex items-center">
-              {" "}
               <MdArrowOutward />
               Find out more
             </button>
           </div>
         </div>
-        <div className="flex text-black justify-center items-center absolute inset-x-0 bottom-2 gap-20">
+        <div className="flex text-black justify-center items-center absolute inset-x-0 bottom-2 gap-20 max-sm:hidden max-md:gap-6">
           {data.map((item) => (
             <div
               key={item.id}
-              className="w-[373px] relative h-[109px] text-center bg-white hover:h-[200px] hover:-translate-y-20  hover:ease-in hover:duration-300 hover:delay-200 group"
+              className="w-[373px] relative h-[109px] max-sm:w-auto  text-center bg-white hover:h-[200px] hover:-translate-y-20  hover:ease-in hover:duration-300 hover:delay-200 group"
             >
-              <div className="flex pt-2 pl-2 font-semibold pb-2 justify-start items-center gap-6 text-2xl ease-in text-center duration-300">
+              <div className="flex max-md:flex-col sm:gap-2 pt-2 pl-2 font-semibold pb-2 justify-start items-center gap-6 text-2xl ease-in text-center duration-300">
                 <img src={item.logo} alt="" />
                 <h1 className="  ">{item.heade}</h1>
               </div>

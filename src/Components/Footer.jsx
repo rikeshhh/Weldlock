@@ -3,39 +3,40 @@ import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-image  border-t-2  border-[#ffffff1a]">
-      <section className="main-container  flex justify-center items-center">
+    <footer className="bg-footer-image  relative">
+      <section className="main-container flex justify-center items-center max-[600px]:w-auto">
         <div className="flex flex-col gap-10 pt-24">
           <h2>Enquire Now</h2>
-          <div className="grid grid-cols-2 justify-between pb-6 border-b-2 border-[#ffffff1a]">
+          <div className="grid grid-cols-2 justify-between pb-6 border-b-2 border-[#ffffff1a] max-sm:grid-cols-1">
             <div className="text-4xl font-semibold">
               <h3>For More Information</h3>
               <h4 className="text-maroon-red">On Product And Services</h4>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end max-sm:justify-center">
               <button className="bg-maroon-red flex items-center px-[30px] py-[16px] h-fit font-bold">
                 <MdArrowOutward /> Request A Quote
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-[26px] mt-[64px]">
-            <div className="flex justify-start flex-col gap-[24px]">
+          <div className="grid grid-cols-4 gap-[26px] mt-[64px] max-sm:grid-cols-1 max-md:grid-cols-2">
+            <div className="flex justify-start flex-col gap-[24px] ">
               <div>
                 <a href="/">
-                <figure>
-                <img src={logo} alt="" />
-                </figure>
+                  <figure>
+                    <img src={logo} alt="" />
+                  </figure>
                 </a>
               </div>
-              <p>
-                We are on a mission to invest in new products and systems which
-                will provide the Australian market with innovative solutions.
+             <div className="relative">
+             <p>
+                We are on a mission to invest in new products and systems which will provide the Australian market with innovative solutions.
               </p>
+             </div>
             </div>
             <div className="flex flex-col gap-[20px]">
               <h2 className="text-2xl font-semibold">Quick Links</h2>
@@ -61,17 +62,17 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex flex-col gap-[20px]">
-              <h2 className="font-semibold text-2xl">
+            <div className="flex font-semibold text-2xl sm:text-xs flex-col gap-2 ">
+              <h2>
                 SUBSCRIBE TO OUR NEWS LETTER
               </h2>
-              <div className="flex">
+              <div className="flex items-center justify-center relative">
                 <input type="text" />
-                <button className="bg-maroon-red text-white w-8 flex justify-center items-center">
+                <button className="bg-maroon-red text-white w-8 flex justify-center items-center absolute right-0 h-full">
                   <FaArrowRight />
                 </button>
               </div>
-              <div className="flex justify-start items-center gap-[12px]">
+              <div className="flex justify-start items-center gap-[12px] text-xl">
                 <IoLogoLinkedin />
                 <FaYoutube />
                 <FaFacebook />
@@ -79,13 +80,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between gap-12">
-            <div className="flex flex-col text-xs font-light">
-              <span className="text-xs font-normal text-grayWhite">
-                © 2023 by NEPEAN Building and Infrastructure. Weldlok® is a
-                registered trademark of NEPEAN Building & Infrastructure.
-              </span>
-              <span className="">
+          <div className="flex justify-between gap-12 items-center max-sm:flex-col">
+            <div className="flex flex-col text-xs font-light items-center ">
+              <spa>
+                © 2023 by NEPEAN Building and Infrastructure. 
+              </spa>
+              <span>
                 Weldlok® is a registered trademark of NEPEAN Building &
                 Infrastructure.
               </span>

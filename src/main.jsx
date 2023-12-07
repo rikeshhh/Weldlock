@@ -10,15 +10,18 @@ import Hero from './Components/Hero'
 import Feature from './Components/Feature'
 import Explore from './Components/Explore'
 import App from './App'
+import Menu from './Components/Menu'
+import Layout from './Layout'
 const router = createBrowserRouter([
+  {
+    path:'',
+    element:<Layout/>,
+ children:[
   {
     path:'/',
     element:<App/>,
- children:[
-  {
-    path:'',
-    element:<Hero/>,
       },
+    
           {
             path:'About',
             element:<About/>,
@@ -44,7 +47,11 @@ const router = createBrowserRouter([
             element:<Explore/>
           },
  ]
-  },   
+  },
+  {
+    path:'menu',
+    element:<Menu/>
+   },   
             ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

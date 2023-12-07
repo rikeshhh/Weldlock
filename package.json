@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flowbite": "^2.2.0",
+    "flowbite-react": "^0.7.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
+    "rsuite": "^5.46.1",
     "sort-by": "^1.2.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.0.5"

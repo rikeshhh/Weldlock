@@ -34,16 +34,16 @@ const Explore = () => {
   return (
     // bg-solutionBlack Custom
     <section className="Our-brochues bg-solutionBlack pt-24 ">
-      <div className="main-container">
-        <div className="flex ">
+      <div className="main-container max-sm:w-auto">
+        <div className="flex max-sm:flex-col max-sm:items-center max-md:flex-col">
           <div className="flex flex-col justify-start ">
             <span>OUR BROCHUES</span>
-            <div className="w-[476px] h-[527px] flex justify-start gap-8 flex-col pr-14 ">
+            <div className="w-[476px] h-[527px] flex justify-start gap-8 flex-col pr-14 max-sm:w-auto">
               <div className="text-5xl font-semibold">
                 <h3>Explore And Download</h3>
                 <h3>Our Brochures</h3>
               </div>
-              <div className="flex flex-col justify-between gap-3">
+              <div className="flex flex-col justify-between gap-3 max-sm:justify-center">
                 <div className="  flex border-b-2 border-[#ffffff1a] pb-2 font-semibold text-2xl gap-2">
                   <figure>
                     <img src={pdf} alt="" />
@@ -79,7 +79,7 @@ const Explore = () => {
                 type: "progressbar",
               }}
               modules={[Pagination]}
-              className="mySwiper flex flex-col justify-between gap-12 "
+              className="mySwiper flex flex-col justify-between gap-12 max-sm:items-center"
               style={{
                 "--swiper-pagination-color": "#F80102",
                 "--swiper-pagination-bullet-inactive-color": "#999999",

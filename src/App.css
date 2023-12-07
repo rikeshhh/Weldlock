@@ -1,47 +1,48 @@
-body{
-    font-family: 'Manrope', sans-serif;
-    color: white;
+body {
+  font-family: "Manrope", sans-serif;
+  color: white;
+  background-color: #232323;
 }
 
-.bg-header-image{
-  background-image: url('./assets/heroRect.png');
+.bg-header-image {
+  background-image: url("./assets/heroRect.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-container{
+.main-container {
+  max-width: calc(1174px + 30px);
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.header-container {
   width: calc(1174px + 30px);
-padding: 0px 15px;
-margin: 0 auto;
-}
-.header-container{
-    width: calc(1174px + 30px);
   padding: 15px 0px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
-.hero-background{
-    background-image: url('./assets/heroRect.png');
-    width: 100%;
-    object-fit: cover;
-    color: white;
+.hero-background {
+  background-image: url("./assets/heroRect.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.customerBackground-image{
-    background-image: url('./assets/customer/custom.png');
-    width: 100%;
-    color: white;
-    width:  100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.customerBackground-image {
+  background-image: url("./assets/customer/custom.png");
+  width: 100%;
+  color: white;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg-footer-image{
-    opacity: 1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 25.67%, rgba(0, 0, 0, 0.66) 100%), linear-gradient(0deg, #FFF 0%, #FFF 100%), url(./assets/Footer.png), lightgray 50% / cover no-repeat;
-    width: 100%;
-    max-height:100%;
-    background-blend-mode: normal, hue, normal;
+.bg-footer-image {
+  background-image: url(./assets/footere.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.requestCode-image{
+.requestCode-image {
   background-image: url(./assets/request.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,38 +52,58 @@ margin: 0 auto;
   position: relative;
   width: 100%;
   height: 100%;
-  }
-  
-  .swiper-slide {
-    font-size: 18px;
-      display: flex;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .swiper-pagination {
-    bottom: 10px; 
-  }
+}
 
-  .mySwiper .swiper-pagination-progressbar {
-    height: 5px; 
-    margin-top: 60%;
-  }
-  .hoverMe::after{
-    content:'';
-    height: 2px;
-    width: 100%;
-    transform: scale(0);
-    background-color: red;
-    transition: transform 0.3s ease-in;
-    position: absolute;
-    bottom: -3.1rem;
-  }
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+}
 
-  .hoverMe:hover::after{
-transform: scale(1);
-  }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination {
+  bottom: 10px;
+}
+
+.mySwiper .swiper-pagination-progressbar {
+  height: 5px;
+  margin-top: 60%;
+}
+
+.hoverMe::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  transform: scale(0);
+  background-color: red;
+  transition: transform 0.3s ease-in;
+  position: absolute;
+  bottom: -2rem;
+}
+.hoverMe:first-child::after {
+left: -5px;
+}
+
+.hoverMe:hover::after {
+  transform: scale(1);
+}
+.reponsive-lg {
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+label, select{
+  background-color: transparent;
+  border:none;
+  font-weight: 900;
+}
+
+option{
+  border: none;
+  background-color: transparent;
+  color: black;
+}

@@ -40,19 +40,19 @@ const Solutions = () => {
     },
   ];
   return (
-    <section className="Our-solution bg-solutionBlack h-full py-24 ">
-      <div className="main-container ">
-        <div className="flex flex-col gap-[12px]">
+    <section className="Our-solution bg-solutionBlack h-full py-24" id="prduct">
+      <div className="main-container">
+        <div className="flex flex-col gap-[12px] pb-6 sm:justify-center">
           <span>OUR SOLUTIONS</span>
           <h2 className="text-5xl font-semibold">Our Diverse Product Range</h2>
         </div>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 max-sm:flex-col max-md:flex-col  ">
           {data.map((item) => (
-            <div className="flex flex-col gap-6" key={item.id}>
+            <div className="flex flex-col gap-6 justify-center items-center" key={item.id}>
               <figure>
                 <img src={item.image} alt="" />
               </figure>
-              <div className="flex gap-3 flex-col">
+              <div className="flex gap-6 flex-col">
                 <h3 className="text-2xl h-[60px]">{item.heade}</h3>
                 <div className="text-lg h-[84px] mt-[18px]">
                   <p>{item.content}</p>

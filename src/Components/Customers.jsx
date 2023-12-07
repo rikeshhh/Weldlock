@@ -67,24 +67,22 @@ const Customers = () => {
     alignitems: center;
   `;
   return (
-    <section className="Our-Customer customerBackground-image">
-      <div className="main-container">
-        <div className="flex flex-col justify-center items-start gap-12 py-24">
+    <section className="Our-Customer customerBackground-image ">
+      <div className="main-container sm:w-full">
+        <div className="flex flex-col justify-center items-start gap-12 py-24 max-sm:items-center">
           <div className="flex flex-col gap-[12px]">
             <span>Our Customers</span>
             <h2 className="text-[44px]  font-semibold">Who we work for</h2>
           </div>
-          <div className="grid grid-cols-3 gap-[25px] justify-center items-center">
+          <div className="grid grid-cols-3 gap-[25px] justify-center items-center  max-sm:grid-cols-2">
             {data.map((item) => (
-              <div key={item.id}>
-                <div className="flex">
-                  <Button className="flex justify-start items-center gap-4">
-                 <figure>
-                 <img src={item.image} />
-                 </figure>
-                    {item.name}
-                  </Button>
-                </div>
+              <div key={item.id} className="flex">
+                <Button className="flex justify-start items-center gap-4">
+                  <figure>
+                    <img src={item.image} />
+                  </figure>
+                  {item.name}
+                </Button>
               </div>
             ))}
           </div>

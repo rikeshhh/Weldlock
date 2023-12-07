@@ -27,9 +27,9 @@ const Latest = () => {
     },
   ];
   return (
-    <section className="Our-News-Event bg-black py-24">
-      <div className="main-container">
-        <div className="flex flex-col">
+    <section className="Our-News-Event bg-black py-24" id="latest">
+      <div className="main-container max-sm:w-auto">
+        <div className="flex flex-col max-sm:items-center">
           <div className="flex justify-between pb-12">
             <div className="flex flex-col">
               <span>NEWS AND EVENT</span>
@@ -37,8 +37,8 @@ const Latest = () => {
             </div>
             <button className="bg-maroon-red p-2">View ALL News</button>
           </div>
-          <div className="flex gap-6 justify-around">
-            <div className="flex flex-col gap-[18px] justify-start items-start h-[579px] w-[574px]">
+          <div className="flex gap-6 justify-around max-sm:flex-col max-sm:items-center">
+            <div className="flex flex-col gap-[18px] justify-start items-start h-[579px] w-[574px] max-sm:w-auto">
 <figure>
 <img src={water} alt="" />
 </figure>

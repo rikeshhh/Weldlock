@@ -11,9 +11,9 @@ import { Pagination } from "swiper/modules";
 
 const Feature = () => {
   return (
-    <section className="Case-Studies bg-dipBlack py-24">
-      <div className="main-container">
-        <div className="flex flex-col">
+    <section className="Case-Studies bg-dipBlack py-24" id="feature">
+      <div className="main-container sm:w-auto">
+        <div className="flex flex-col justify-center">
           <span>Case Studies</span>
           <div className="flex justify-between">
             <h2 className="text-4xl">Featured Project</h2>
@@ -42,7 +42,7 @@ const Feature = () => {
               }}
             >
               <SwiperSlide className="pb-12">
-                <div className="flex pt-11 justify-between gap-12">
+                <div className="flex pt-11 justify-between gap-12 max-sm:flex-col">
                   <div>
                  <figure  className="flex justify-center h-[500px]">
                  <img src={build} alt="" />
