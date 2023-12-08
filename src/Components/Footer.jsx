@@ -13,13 +13,13 @@ const Footer = () => {
       <section className="main-container flex justify-center items-center max-[600px]:w-auto">
         <div className="flex flex-col gap-10 pt-24">
           <h2>Enquire Now</h2>
-          <div className="grid grid-cols-2 justify-between pb-6 border-b-2 border-[#ffffff1a] max-sm:grid-cols-1">
+          <div className="grid grid-cols-2 justify-between pb-6 border-b-2 border-[#ffffff1a] max-sm:grid-cols-1 max-sm:gap-2">
             <div className="text-4xl font-semibold">
               <h3>For More Information</h3>
               <h4 className="text-maroon-red">On Product And Services</h4>
             </div>
             <div className="flex justify-end max-sm:justify-start gap-2">
-              <Link to="Progress" className="bg-maroon-red flex items-center px-[30px] py-[16px] h-fit font-bold">
+              <Link to="Progress" className="bg-maroon-red flex items-center px-[30px] py-[16px] h-fit font-bold  max-sm:p-2">
                 <MdArrowOutward /> Request A Quote
               </Link>
             </div>

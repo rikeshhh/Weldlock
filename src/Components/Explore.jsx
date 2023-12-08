@@ -39,7 +39,7 @@ const Explore = () => {
           <div className="flex flex-col justify-start ">
             <span>OUR BROCHUES</span>
             <div className="w-[476px] h-[527px] flex justify-start gap-8 flex-col pr-14 max-sm:w-auto">
-              <div className="text-5xl font-semibold">
+              <div className="text-4xl font-semibold">
                 <h3>Explore And Download</h3>
                 <h3>Our Brochures</h3>
               </div>
@@ -64,7 +64,7 @@ const Explore = () => {
                 </div>
               </div>
               <div>
-                <button className="bg-maroon-red pt-[16px] pr-[30px] pl-[30px] pb-[16px] flex items-center h-fit gap-[12px]">
+                <button className="bg-maroon-red pt-[16px] pr-[30px] pl-[30px] pb-[16px] flex items-center h-fit gap-[12px]  max-sm:p-2">
                   <MdArrowOutward />
                   View All Brochures
                 </button>

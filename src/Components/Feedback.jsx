@@ -59,14 +59,14 @@ const Feedback = () => {
 
 
         </div>
-        <div className="flex requestCode-image justify-evenly items-center  gap-3  mt-[96px] max-sm:flex-col">
+        <div className="flex requestCode-image justify-evenly items-center  gap-3  mt-[96px] max-sm:flex-col max-sm:items-start ">
           <div className="p-[96px] text-4xl font-black max-sm:p-4">
             <h4>Elevate Your Infrastructure</h4>
             <h5 className="text-maroon-red">
               With Our Premium Solutions!
             </h5>
           </div>
-          <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 h-fit flex items-center gap-[12px]">
+          <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 h-fit flex items-center gap-[12px] max-sm:p-2">
             <MdArrowOutward />
             Request a code
           </button>

@@ -44,17 +44,17 @@ const Solutions = () => {
       <div className="main-container">
         <div className="flex flex-col gap-[12px] pb-6 sm:justify-center">
           <span>OUR SOLUTIONS</span>
-          <h2 className="text-5xl font-semibold">Our Diverse Product Range</h2>
+          <h2 className="text-4xl font-semibold ">Our Diverse Product Range</h2>
         </div>
-        <div className="flex justify-center gap-4 max-sm:flex-col max-md:flex-col  ">
+        <div className="flex justify-center gap-4 max-sm:flex-col max-md:flex-col w-full items-center ">
           {data.map((item) => (
             <div className="flex flex-col gap-6 justify-center items-center" key={item.id}>
-              <figure>
+              <figure className="w-full">
                 <img src={item.image} alt="" />
               </figure>
-              <div className="flex gap-6 flex-col">
-                <h3 className="text-2xl h-[60px] max-sm:h-fit">{item.heade}</h3>
-                <div className="text-lg h-[84px] mt-[18px] max-sm:h-fit max-sm:text-xs max-sm:mt-0">
+              <div className="flex gap-6 flex-col w-full">
+                <h3 className="text-2xl h-[60px] max-sm:h-fit max-sm:w-56">{item.heade}</h3>
+                <div className="text-lg h-[84px] mt-[18px] max-sm:h-fit max-sm:text-xs max-sm:w-40 max-sm:mt-0">
                   <p>{item.content}</p>
                 </div>
                 <button className="flex items-center gap-2">
