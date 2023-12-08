@@ -71,7 +71,7 @@ body {
 
 .mySwiper .swiper-pagination-progressbar {
   height: 5px;
-  margin-top: 60%;
+  margin-top: auto;
 }
 
 .hoverMe::after {

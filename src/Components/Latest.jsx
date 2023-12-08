@@ -30,7 +30,7 @@ const Latest = () => {
     <section className="Our-News-Event bg-black py-24" id="latest">
       <div className="main-container max-sm:w-auto">
         <div className="flex flex-col max-sm:items-center">
-          <div className="flex justify-between pb-12">
+          <div className="flex justify-between pb-12 max-sm:flex-col">
             <div className="flex flex-col">
               <span>NEWS AND EVENT</span>
               <h2 className="text-4xl font-semibold">Our Latest News</h2>

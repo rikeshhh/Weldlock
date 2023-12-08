@@ -72,9 +72,9 @@ const Customers = () => {
         <div className="flex flex-col justify-center items-start gap-12 py-24 max-sm:items-center">
           <div className="flex flex-col gap-[12px]">
             <span>Our Customers</span>
-            <h2 className="text-[44px]  font-semibold">Who we work for</h2>
+            <h2 className="text-[44px]  font-semibold max-sm:text-lg">Who we work for</h2>
           </div>
-          <div className="grid grid-cols-3 gap-[25px] justify-center items-center  max-sm:grid-cols-2">
+          <div className="grid grid-cols-3 gap-[25px] justify-center items-center  max-sm:grid-cols-1">
             {data.map((item) => (
               <div key={item.id} className="flex">
                 <Button className="flex justify-start items-center gap-4">

@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import logo from "../assets/logo.svg";
 import { IoLogoLinkedin } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,10 +18,10 @@ const Footer = () => {
               <h3>For More Information</h3>
               <h4 className="text-maroon-red">On Product And Services</h4>
             </div>
-            <div className="flex justify-end max-sm:justify-center">
-              <button className="bg-maroon-red flex items-center px-[30px] py-[16px] h-fit font-bold">
+            <div className="flex justify-end max-sm:justify-start gap-2">
+              <Link to="Progress" className="bg-maroon-red flex items-center px-[30px] py-[16px] h-fit font-bold">
                 <MdArrowOutward /> Request A Quote
-              </button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-4 gap-[26px] mt-[64px] max-sm:grid-cols-1 max-md:grid-cols-2">
@@ -66,9 +67,9 @@ const Footer = () => {
               <h2>
                 SUBSCRIBE TO OUR NEWS LETTER
               </h2>
-              <div className="flex items-center justify-center relative">
-                <input type="text" />
-                <button className="bg-maroon-red text-white w-8 flex justify-center items-center absolute right-0 h-full">
+              <div className="flex items-start relative">
+                <input type="text" className="w-full" />
+                <button className="bg-maroon-red text-white w-8 flex justify-center items-center absolute right-0 h-full ">
                   <FaArrowRight />
                 </button>
               </div>

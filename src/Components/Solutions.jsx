@@ -53,8 +53,8 @@ const Solutions = () => {
                 <img src={item.image} alt="" />
               </figure>
               <div className="flex gap-6 flex-col">
-                <h3 className="text-2xl h-[60px]">{item.heade}</h3>
-                <div className="text-lg h-[84px] mt-[18px]">
+                <h3 className="text-2xl h-[60px] max-sm:h-fit">{item.heade}</h3>
+                <div className="text-lg h-[84px] mt-[18px] max-sm:h-fit max-sm:text-xs max-sm:mt-0">
                   <p>{item.content}</p>
                 </div>
                 <button className="flex items-center gap-2">

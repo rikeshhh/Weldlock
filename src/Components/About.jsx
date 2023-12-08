@@ -10,12 +10,12 @@ const About = () => {
         <img src={aboutpicture} alt="" />
         </figure>
           <div className="flex justify-center flex-col gap-8">
-            <span>About WeldLok</span>
-            <h2 className="font-bold text-3xl max-sm:text-xs ">
+            <h2 className="font-black max-sm:text-3xl">About WeldLok</h2>
+            <span className="font-bold text-3xl max-sm:text-xs ">
               Weldlok and Balltube: Trusted Australian brands for 60+ years,
               serving infrastructure, mining, industrial, civil, and
               fabrication.
-            </h2>
+            </span>
            <div className="text-lg font-medium">
            <p>
               We are specialists in the design and supply of high quality,

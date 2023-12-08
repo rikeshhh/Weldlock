@@ -79,7 +79,7 @@ const Explore = () => {
                 type: "progressbar",
               }}
               modules={[Pagination]}
-              className="mySwiper flex flex-col justify-between gap-12 max-sm:items-center"
+              className="mySwiper flex flex-col justify-between gap-12 max-sm:items-center max-sm:gap-2"
               style={{
                 "--swiper-pagination-color": "#F80102",
                 "--swiper-pagination-bullet-inactive-color": "#999999",
@@ -88,7 +88,7 @@ const Explore = () => {
               }}
             >
               {data.map((item) => (
-                <SwiperSlide key={item.id} className="pb-10">
+                <SwiperSlide key={item.id} className="pb-10 max-sm:mt-16">
                   <div className="flex pt-11 flex-col">
                     <figure>
                       <img src={item.image} alt="" />

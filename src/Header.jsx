@@ -3,34 +3,31 @@ import logo from "./assets/logo.svg";
 import { Link } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Dropdown } from 'flowbite-react';
-import { useState } from "react";
-
+import { Dropdown } from "flowbite-react";
 
 const Header = () => {
   const data = [
-   
     {
       id: 1,
       content: "OUR PRODUCT",
       pathone: "About",
-      pathTwo:'Feedback',
-      pathThree:'Feature',
+      pathTwo: "Feedback",
+      pathThree: "Feature",
       logo: <FaCaretDown />,
-      optionOne:'Product',
-      optionTwo:'Feedback',
-      optionThree:'Feature'  
+      optionOne: "Product",
+      optionTwo: "Feedback",
+      optionThree: "Feature",
     },
     {
       id: 2,
       content: "CUSTOMERS",
       pathone: "Solutions",
-      pathTwo:'Customers',
-      pathThree:'Explore',
+      pathTwo: "Customers",
+      pathThree: "Explore",
       logo: <FaCaretDown />,
-      optionOne:'Solutions',
-      optionTwo:'Customer',
-      optionThree:'Explore'
+      optionOne: "Solutions",
+      optionTwo: "Customer",
+      optionThree: "Explore",
     },
   ];
   return (
@@ -44,37 +41,43 @@ const Header = () => {
       </div>
 
       <nav className="Navbar flex justify-center items-center ">
-       <div>
-       <ul className="flex justify-around items-center text-xl gap-6 relative max-sm:hidden  max-md:hidden max-lg:text-base max-lg:gap-4">
-        <li className="relative hoverMe">
-          <Link to='/'>HOME</Link>
-         </li>
-        
-          {data.map((item) => (
-            <li key={item.id} className="relative hoverMe">
-       <Dropdown label={item.content} inline>
-      <Dropdown.Item><Link to={item.pathone}>{item.optionOne}</Link></Dropdown.Item>
-      <Dropdown.Item><Link to={item.pathTwo}>{item.optionTwo}</Link></Dropdown.Item>
-      <Dropdown.Item><Link to={item.pathThree}>{item.optionThree}</Link></Dropdown.Item>
-    </Dropdown>
+        <div>
+          <ul className="flex justify-around items-center text-xl gap-6 relative max-sm:hidden max-xl:text-base  max-md:hidden max-lg:text-xs max-lg:gap-4">
+            <li className="relative hoverMe">
+              <Link to="/">HOME</Link>
             </li>
-          ))}
-           <li>
-          <Link to="About">ABOUT US</Link>
-         </li>
-          <li>
-            NEWS
-          </li>
-          <li>
-            <Link>CONTACT US</Link>
-          </li>
-        </ul>
-       </div>
-        <div className="lg:hidden max-lg:hidden">
-        
-           <button>
-           <Link to="menu"> <RxHamburgerMenu /></Link>
-           </button>
+
+            {data.map((item) => (
+              <li key={item.id} className="relative hoverMe">
+                <Dropdown label={item.content} inline>
+                  <Dropdown.Item>
+                    <Link to={item.pathone}>{item.optionOne}</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to={item.pathTwo}>{item.optionTwo}</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to={item.pathThree}>{item.optionThree}</Link>
+                  </Dropdown.Item>
+                </Dropdown>
+              </li>
+            ))}
+            <li>
+              <Link to="About">ABOUT US</Link>
+            </li>
+            <li>NEWS</li>
+            <li>
+              <Link>CONTACT US</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="md:hidden ">
+          <button>
+            <Link to="menu">
+              {" "}
+              <RxHamburgerMenu />
+            </Link>
+          </button>
         </div>
       </nav>
 

@@ -12,6 +12,7 @@ import Explore from './Components/Explore'
 import App from './App'
 import Menu from './Components/Menu'
 import Layout from './Layout'
+import Progress from './Components/Progress'
 const router = createBrowserRouter([
   {
     path:'',
@@ -21,10 +22,18 @@ const router = createBrowserRouter([
     path:'/',
     element:<App/>,
       },
+      {
+        path:'menu',
+        element:<Menu/>
+       }, 
     
           {
             path:'About',
             element:<About/>,
+          },
+          {
+            path:'Progress',
+            element:<Progress/>,
           },
           {
             path:'Feature',
@@ -46,12 +55,10 @@ const router = createBrowserRouter([
             path:'Explore',
             element:<Explore/>
           },
+        
  ]
   },
-  {
-    path:'menu',
-    element:<Menu/>
-   },   
+   
             ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

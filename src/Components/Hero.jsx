@@ -36,16 +36,18 @@ const Hero = () => {
     <section className="hero-background relative overflow-hidden">
       <div className=" main-container max-sm:w-auto">
         <div className="text-center py-56 flex items-center flex-col justify-center gap-8">
-          <div className="font-semibold text-6xl w-[971px] max-sm:w-auto max-sm:text-xl md:w-auto sm:w-auto
-          ">
+          <div
+            className="font-semibold text-6xl w-[971px] max-sm:w-auto max-sm:text-3xl  sm:w-auto
+          "
+          >
             <h1>High Quality,reliable and proven products and systems</h1>
           </div>
-          <div>
-          <p>
-            The Weldlok brand guarantees the right solution for all customers
-          </p>
+          <div className="max-sm:text-lg">
+            <p>
+              The Weldlok brand guarantees the right solution for all customers
+            </p>
           </div>
-        
+
           <div className="flex justify-center pb-12">
             <button className="bg-maroon-red text-white pt-4 pb-4 pr-8 pl-8 flex items-center">
               <MdArrowOutward />
@@ -57,9 +59,9 @@ const Hero = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="w-[373px] relative h-[109px] max-sm:w-auto  text-center bg-white hover:h-[200px] hover:-translate-y-20  hover:ease-in hover:duration-300 hover:delay-200 group"
+              className="w-[373px] relative h-[159px] max-sm:w-auto  text-center bg-white  hover:-translate-y-20 hover:transition-all hover:ease-in  hover:duration-300 hover:delay-200 group"
             >
-              <div className="flex max-md:flex-col sm:gap-2 pt-2 pl-2 font-semibold pb-2 justify-start items-center gap-6 text-2xl ease-in text-center duration-300">
+              <div className="flex max-md:flex-col sm:gap-2 p-2 font-semibold justify-start items-center gap-6 text-2xl ease-in text-center">
                 <img src={item.logo} alt="" />
                 <h1 className="  ">{item.heade}</h1>
               </div>
@@ -69,7 +71,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="relative">
-                <div className="bg-maroon-red group-hover:absolute -top-5 right-3 h-8 w-8 flex justify-center  items-center absolute  group-hover:transition-all hover:delay-300 group-hover:ease-in-out">
+                <div className="bg-maroon-red  -top-5 right-3 h-8 w-8 flex justify-center  items-center absolute  group-hover:ease-in-out">
                   <MdArrowOutward className="group-hover:rotate-45 group-hover:ease-in-out   text-white group-hover:duration-300" />
                 </div>
                 <figure>
